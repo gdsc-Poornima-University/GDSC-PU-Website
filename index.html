@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GDSC Poornima</title>
+    <link rel="shortcut icon" href="./assets/gdsc.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,12 +18,24 @@
             <a href="#"><img src="./assets/Copy of GDSC Logo chapter lockup template.png" alt=""></a>
         </div>
         <div class="right-nav">
-            <h3>Home</h3>
-            <h3>Vision</h3>
-            <h3>Team</h3>
-            <h3>Events</h3>
-            <h3>Contact</h3>
-            <h3>Contributors</h3>
+            <a href="#">
+                <h3>Home</h3>
+            </a>
+            <a href="#main2">
+                <h3>Vision</h3>
+            </a>
+            <a href="#team">
+                <h3>Team</h3>
+            </a>
+            <a href="">
+                <h3>Events</h3>
+            </a>
+            <a href="">
+                <h3>Contact</h3>
+            </a>
+            <a href="">
+                <h3>Contributors</h3>
+            </a>
         </div>
     </nav>
     <main>
@@ -42,7 +55,8 @@
     <main-foot>
         <i class="fa-solid fa-caret-down" style="color: #5f6368"></i>
     </main-foot>
-    <div class="main2">
+    <div class="main2" id="main2">
+        <main2-bg></main2-bg>
         <main2-top>
             <h2>Vision</h2>
             <h3>GDSC Poornima University is inspired by the Google Developer'Family</h3>
@@ -53,26 +67,77 @@
         <main2-foot>
             <div class="cards">
                 <div class="card">
-                    <h3>Seminar</h3>
+                    <h3 class="Seminar">Seminar</h3>
                     <p>Get updated with the latest news and announcements.</p>
                 </div>
                 <div class="card">
-                    <h3>Project</h3>
+                    <h3 class="Project">Project</h3>
                     <p>Project With a social impact that help a lot of people.</p>
                 </div>
                 <div class="card">
-                    <h3>Workshop</h3>
+                    <h3 class="Workshop">Workshop</h3>
                     <p>Hands-on experience with the community</p>
                 </div>
                 <div class="card">
-                    <h3>Hackathon</h3>
+                    <h3 class="Hackathon">Hackathon</h3>
                     <p>Dreams, Explore. Wonder. Build it together.</p>
                 </div>
             </div>
         </main2-foot>
+        <main2-foot>
+            <i class="fa-solid fa-caret-down" style="color: #5f6368"></i>
+        </main2-foot>
     </div>
-
-    <!-- script -->
+    <div class="main3" id="team">
+        <main3-bg></main3-bg>
+        <main3-top>
+            <h2>The Boards</h2>
+            <h3 class="year">2023 - 2024</h3>
+            <h3>Our Team comprised of g-fuel drinking developers, desginers and managers that love nothing but
+                perfection ing but
+                perfection
+            </h3>
+        </main3-top>
+        <main3-foot>
+            <borads-cards>
+                <bcard-lvl1></bcard-lvl1>
+                <div class="bcard">
+                    <div class="bcard-info">
+                        <div class="bcard-avatar"><img src="./assets/WhatsApp Image 2023-03-29 at 15.05.35.jpg" alt="">
+                        </div>
+                        <div class="bcard-title">Shubhankit Jain</div>
+                        <div class="bcard-subtitle">GDSC - Lead</div>
+                    </div>
+                    <ul class="bcard-social">
+                        <li class="bcard-social__item">
+                            <i class="fa-brands fa-facebook"></i>
+                        </li>
+                        <li class="bcard-social__item">
+                            <i class="fa-brands fa-instagram"></i>
+                        </li>
+                        <li class="bcard-social__item">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </li>
+                    </ul>
+                </div>
+                </bcard-lvl1>
+            </borads-cards>
+        </main3-foot>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-5', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true,
+            },
+        });
+    </script>
 
 </body>
 

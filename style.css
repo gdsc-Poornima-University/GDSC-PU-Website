@@ -8,6 +8,9 @@
     /* background-color: #F9FAFB; */
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Poppins', sans-serif; */
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+    user-select: none;
 }
 
 html,
@@ -33,7 +36,7 @@ nav {
     width: 100%;
     top: 0px;
     padding-inline: 40px;
-    height: 80px;
+    height: 70px;
     border-bottom: 2px solid #5f636898;
     z-index: 1;
 }
@@ -48,6 +51,10 @@ nav {
     font-size: 1rem;
     background: transparent;
     color: #5f6368;
+}
+
+.right-nav a {
+    text-decoration: none;
 }
 
 .right-nav h3:hover {
@@ -139,6 +146,21 @@ main-foot i {
     gap: 100px;
     background-color: #f9fafb;
     height: 100vh;
+    position: relative;
+    /* background-image: url(./assets/./arabica-323.png); */
+}
+
+main2-bg {
+    background-image: url(./assets/arabica-323.png);
+    height: 100%;
+    width: 100vw;
+    background-size: 38rem;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* margin-left: 40px; */
+    position: absolute;
+    right: 0px;
+    opacity: 20%;
 }
 
 main2-top {
@@ -154,11 +176,12 @@ main2-top {
 main2-top h2 {
     font-size: 4rem;
     color: #4B5563;
+    margin-top: 60px;
 }
 
 main2-top h3 {
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
 
 main2-top h3:nth-child(3) {
@@ -173,6 +196,223 @@ main2-foot {
 .cards {
     display: flex;
     padding-inline: 100px;
+    gap: 80px;
+    text-align: left;
 }
 
-.cards {}
+.card {
+    width: 150px;
+}
+
+.card .Seminar {
+    background-color: #F9EEB1;
+    width: fit-content;
+    border-radius: 4px;
+    color: #D9A40D;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+.card .Project {
+    background-color: #EFCABB;
+    width: fit-content;
+    border-radius: 4px;
+    color: #DC4A3D;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+.card .Workshop {
+    background-color: #D5E0EF;
+    width: fit-content;
+    border-radius: 4px;
+    color: #3975D8;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+.card .Hackathon {
+    background-color: #C5D8C1;
+    width: fit-content;
+    border-radius: 4px;
+    color: #2B9758;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+.card p {
+    font-weight: 600;
+    color: #4D5765;
+}
+
+main2-foot i {
+    font-size: 1.5rem;
+    animation: upAndDown 2s ease-in-out infinite;
+    margin-bottom: 10px;
+}
+
+.main3 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    /* overflow-y: hidden; */
+}
+
+main3-bg {
+    background-image: url(./assets/urban-finishing-tape-1.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-position: center;
+    position: absolute;
+    opacity: 20%;
+}
+
+main3-top {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    color: #4D5765;
+}
+
+main3-top h2 {
+    font-size: 4rem;
+    color: #4B5563;
+    margin-top: 60px;
+}
+
+.year {
+    font-weight: 500;
+    font-size: 1.3rem;
+    width: 53.125rem;
+    color: #232323;
+}
+
+main3-top h3 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    width: 53.125rem;
+}
+
+
+.bcard {
+    width: 190px;
+    height: 254px;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+    box-shadow: 0 8px 50px #23232333;
+    border-radius: 6px;
+}
+
+.bcard-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+/*Image*/
+.bcard-avatar img {
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transition: transform .2s ease;
+    margin-bottom: 1rem;
+}
+
+
+.bcard-social {
+    transform: translateY(100%);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* opacity: 0; */
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+.bcard-social__item {
+    list-style: none;
+}
+
+.bcard-social__item svg {
+    display: block;
+    height: 18px;
+    width: 18px;
+    font-size: 1.3rem;
+    fill: #515F65;
+    cursor: pointer;
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+/*Text*/
+.bcard-title {
+    color: #333;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.bcard-subtitle {
+    color: #859ba8;
+    font-size: 0.8em;
+}
+
+/*Hover*/
+.bcard:hover {
+    /* box-shadow: 0 8px 50px #23232333; */
+    transform: scale(1.1);
+}
+
+.bcard:hover .bcard-info {
+    /* transform: translateY(-5%); */
+}
+
+.bcard:hover .bcard-social {}
+
+
+.bcard-avatar:hover {
+    transition: all .2s ease-in-out;
+}
+
+.bcard .bcard-social :hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    fill: #232323;
+    transition: all .2s ease-in-out;
+}
+
+.bcard {
+    text-align: center;
+}
+
+.bcard-avatar img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+bcard-lvl1 {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+boards-card {
+    padding: 0;
+}
