@@ -27,7 +27,7 @@
             <a href="#team">
                 <h3>Team</h3>
             </a>
-            <a href="">
+            <a href="#events">
                 <h3>Events</h3>
             </a>
             <a href="">
@@ -98,7 +98,7 @@
                 perfection
             </h3>
         </main3-top>
-        <main3-foot>
+        <main3-footer>
             <borads-cards>
                 <bcard-lvl1></bcard-lvl1>
                 <div class="bcard">
@@ -110,34 +110,74 @@
                     </div>
                     <ul class="bcard-social">
                         <li class="bcard-social__item">
-                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
                         </li>
                         <li class="bcard-social__item">
                             <i class="fa-brands fa-instagram"></i>
                         </li>
                         <li class="bcard-social__item">
-                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
                         </li>
                     </ul>
                 </div>
                 </bcard-lvl1>
             </borads-cards>
-        </main3-foot>
+            <button class="button">
+                <p class="text">View All !</p>
+            </button>
+        </main3-footer>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-5', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: true,
-            },
-        });
-    </script>
+    <div class="main4">
+        <main4-bg></main4-bg>
+        <main4-top>
+            <h2 id="events">Events</h2>
+            <h4>New Event</h4>
+            <div class="new-events">
+                <event-card>
+                    <div class="photo">
+                        <img src="./assets/icons8-android-os-100.png" alt="">
+                    </div>
+                    <div class="eve-det">
+                        <h5>Info - Session</h5>
+                        <h6 class="eve-date">28th August 2023</h6>
+                        <button class="Btn">
+                            Click Here
+                        </button>
+                    </div>
+                </event-card>
+            </div>
+            <h4>Past Events</h4>
+            <div class="past-events">
+                <event-card>
+                    <div class="photo">
+                        <img src="./assets/icons8-android-os-100.png" alt="">
+                    </div>
+                    <div class="eve-det">
+                        <h5>Info - Session</h5>
+                        <h6 class="eve-date">28th August 2023</h6>
+                        <button class="Btn">
+                            Click Here
+                        </button>
+                    </div>
+                </event-card>
+                <event-card>
+                    <div class="photo">
+                        <img src="./assets/icons8-android-os-100.png" alt="">
+                    </div>
+                    <div class="eve-det">
+                        <h5>Info - Session</h5>
+                        <h6 class="eve-date">28th August 2023</h6>
+                        <button class="Btn">
+                            Click Here
+                        </button>
+                    </div>
+                </event-card>
+            </div>
+        </main4-top>
+        <main4-foot>
+            <i class="fa-solid fa-caret-down" style="color: #5f6368"></i>
+        </main4-foot>
+    </div>
 
 </body>
 

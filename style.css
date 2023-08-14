@@ -262,7 +262,6 @@ main2-foot i {
     width: 100%;
     text-align: center;
     position: relative;
-    /* overflow-y: hidden; */
 }
 
 main3-bg {
@@ -342,7 +341,6 @@ main3-top h3 {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    /* opacity: 0; */
     transition: transform .2s ease, opacity .2s ease;
 }
 
@@ -360,7 +358,6 @@ main3-top h3 {
     transition: fill 0.2s ease, transform 0.2s ease;
 }
 
-/*Text*/
 .bcard-title {
     color: #333;
     font-size: 1em;
@@ -373,15 +370,11 @@ main3-top h3 {
     font-size: 0.8em;
 }
 
-/*Hover*/
 .bcard:hover {
-    /* box-shadow: 0 8px 50px #23232333; */
     transform: scale(1.1);
 }
 
-.bcard:hover .bcard-info {
-    /* transform: translateY(-5%); */
-}
+.bcard:hover .bcard-info {}
 
 .bcard:hover .bcard-social {}
 
@@ -415,4 +408,186 @@ bcard-lvl1 {
 
 boards-card {
     padding: 0;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    margin-top: 30px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+.button svg path {
+    transition: 400ms;
+}
+
+.button:hover {
+    background-color: transparent;
+}
+
+.button:hover .text {
+    color: #181717;
+}
+
+.button:hover svg path {
+    fill: #181717;
+}
+
+main3-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main4 {
+    height: 100%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    position: relative;
+}
+
+main4-top h2 {
+    font-size: 4rem;
+    color: #4B5563;
+    margin-top: 60px;
+    text-align: center;
+}
+
+main4-top h4 {
+    padding-inline: 40px;
+    color: #4B5563;
+    font-size: 2rem;
+}
+
+event-card {
+    width: 280px;
+    height: 100px;
+    display: flex;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 8.5px 3px #7a7a7a;
+    -moz-box-shadow: 3px 3px 8.5px 3px #7a7a7a;
+    box-shadow: 3px 3px 8.5px 3px #7a7a7a;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0 10px 40px;
+    /* padding: 40px; */
+
+}
+
+.new-events {
+    margin-bottom: 20px;
+}
+
+event-card .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    color: #181717;
+    text-decoration: none;
+    font-size: 15px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.eve-det {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.Btn {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.svgIcon {
+    width: 16px;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.Btn::before {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%, -50%);
+    border-radius: 0;
+}
+
+.Btn:active {
+    transform: translate(5px, 5px);
+    transition-duration: .3s;
+}
+
+.past-events {
+    display: flex;
+}
+
+main4-foot {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main4-foot i {
+    font-size: 1.5rem;
+    animation: upAndDown 2s ease-in-out infinite;
+    margin-bottom: 10px;
 }
