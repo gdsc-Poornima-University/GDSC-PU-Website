@@ -18,7 +18,7 @@
             <a href="#"><img src="./assets/Copy of GDSC Logo chapter lockup template.png" alt=""></a>
         </div>
         <div class="right-nav">
-            <a href="#">
+            <a href="#main">
                 <h3>Home</h3>
             </a>
             <a href="#main2">
@@ -30,15 +30,15 @@
             <a href="#events">
                 <h3>Events</h3>
             </a>
-            <a href="">
+            <a href="#contact">
                 <h3>Contact</h3>
             </a>
-            <a href="">
+            <!-- <a href="">
                 <h3>Contributors</h3>
-            </a>
+            </a> -->
         </div>
     </nav>
-    <main>
+    <main id="main">
         <left-main>
             <h1>Welcome to <span>Poornima University's</span>
                 Google Developer Student
@@ -64,7 +64,7 @@
                 And also, having fun!
             </h3>
         </main2-top>
-        <main2-foot>
+        <div class="main2-foot">
             <div class="cards">
                 <div class="card">
                     <h3 class="Seminar">Seminar</h3>
@@ -83,7 +83,7 @@
                     <p>Dreams, Explore. Wonder. Build it together.</p>
                 </div>
             </div>
-        </main2-foot>
+        </div>
         <main2-foot>
             <i class="fa-solid fa-caret-down" style="color: #5f6368"></i>
         </main2-foot>
@@ -127,10 +127,10 @@
             </button>
         </main3-footer>
     </div>
-    <div class="main4">
-        <main4-bg></main4-bg>
+    <main4 id="events" class="main4">
         <main4-top>
-            <h2 id="events">Events</h2>
+            <main4-bg></main4-bg>
+            <h2>Events</h2>
             <div class="new-events">
                 <h4>New Event</h4>
                 <event-card>
@@ -177,7 +177,32 @@
         <main4-foot>
             <i class="fa-solid fa-caret-down" style="color: #5f6368"></i>
         </main4-foot>
-    </div>
+    </main4>
+    <main5 id="contact" class="main5">
+        <main5-bg></main5-bg>
+        <main5-top>
+            <h2>Contact Us</h2>
+            <h4>We are very active on the following platforms
+            </h4>
+        </main5-top>
+        <main5-between>
+            <div class="bet-top">
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="bet-bot">
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <h4 class="m5-p">Want to stay updated with the latest news and events at GDSC PU</h4>
+            <button class="button">
+                <p class="text">Click Here!</p>
+            </button>
+        </main5-between>
+
+    </main5>
 
 </body>
 
