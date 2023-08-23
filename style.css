@@ -17,23 +17,27 @@ body {
     background-color: #f9fafb;
     overflow-x: hidden;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.545);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
+    border-radius: 25px;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    width: 100%;
-    top: 0;
-    padding-inline: 5%;
-    height: 70px;
-    border-bottom: 2px solid #5f636898;
+    width: 90%;
+    margin: auto;
+    padding-inline: 50px;
+    top: 20px;
+    height: 60px;
     z-index: 5;
 }
 
@@ -44,7 +48,7 @@ nav {
 }
 
 .right-nav h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #5f6368;
 }
 
@@ -60,7 +64,8 @@ nav {
 
 .left-nav a img {
     padding: 5px;
-    height: 3.75rem;
+    height: 3.2rem;
+    margin-top: 4px;
 }
 
 main {
