@@ -35,7 +35,7 @@ nav {
     position: fixed;
     width: 90%;
     margin: auto;
-    /* padding-inline: 50px; */
+    padding-inline: 50px;
     top: 20px;
     height: 60px;
     z-index: 5;
