@@ -35,7 +35,7 @@ nav {
     position: fixed;
     width: 90%;
     margin: auto;
-    padding-inline: 50px;
+    /* padding-inline: 50px; */
     top: 20px;
     height: 60px;
     z-index: 5;
@@ -73,7 +73,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 70px);
+    /* height: calc(100vh - 70px); */
     padding-inline: 5%;
     /* width: 100%; */
     background-color: #f9fafb;
@@ -86,7 +86,7 @@ left-main {
 
 left-main h1 {
     color: #5f6368;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1.25rem;
     font-weight: 600;
 }
@@ -145,6 +145,8 @@ main-foot i {
     background-color: #f9fafb;
     min-height: 100vh;
     position: relative;
+    /* padding-block: 40px; */
+    /* justify-content: center; */
 }
 
 main2-bg {
@@ -677,9 +679,8 @@ main5-between {
 
 @media only screen and (max-width: 770px) {
     nav {
-        padding-inline: 20px;
+        padding-inline: 80px;
         /* Adjust the padding for smaller screens */
-
     }
 
     .right-nav {
@@ -691,6 +692,16 @@ main5-between {
         /* Adjust the padding for smaller screens */
         flex-direction: column;
         align-items: center;
+    }
+
+    main a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main-foot i {
+        display: none;
     }
 
     left-main {
@@ -712,29 +723,47 @@ main5-between {
         max-width: 300px;
     }
 
-    .main2-top h2 {
+    main2-top {
+        padding-inline: 40px;
+    }
+
+    main2-top h2 {
         font-size: 2.5rem;
     }
 
-    .main2-top h3 {
+    main2-top h3 {
         font-size: 1rem;
         width: 100%;
     }
 
-    .main2-foot {
+    main2-top h3:nth-child(3) {
+        /* width: 30px; */
+        padding-inline: 80px;
+    }
+
+    main2-foot {
         padding-block: 20px;
         /* width: fit-content; */
     }
 
-    .cards {
-        flex-direction: column;
-        padding-inline: 20px;
-        gap: 20px;
+    .main2-foot .cards>.card>h3 {
         text-align: center;
     }
 
-    .card {
-        width: 100%;
+    .cards {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        padding-inline: 20px;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card p {
+        /* text-align: left; */
     }
 
     .main3-top h2 {
@@ -809,6 +838,12 @@ main5-between {
 
     .card {
         width: 100%;
+    }
+
+    .card h3 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
     }
 
     .main3,
